@@ -1,0 +1,217 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner{
+width: 100%;
+height: 100vh;
+    background-image: url(./img/Sandton\ b2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0 ;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    justify-content: center;
+}
+.navbar ul li a{
+text-decoration: none;
+color: black;
+font-size: 20px;
+font-weight: bold;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color:  green;
+    transition: 0.2s;
+}
+.navbar ul li:{
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    buttom: -10px;
+}
+.content a{
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 6px;
+    font-size: 29px;
+    font-weight: bold;
+    box-sizing: content-box;
+}
+.content button{
+    background-color: rgb(243, 146, 0);
+    width: 12rem;
+    height: 5rem;
+    border-radius: 12px;
+    position: relative;
+    border: none;
+    top:3rem
+}
+.content button:hover{
+    background-color: green;
+    transition: 0s;
+}
+i{
+    font-size: 2rem;
+    color: rgb(243, 146, 0);
+}
+i:hover{
+    color: green;
+    transition: 0s;
+}
+hr{
+    height: 4rem;
+    background-color: greenyellow;
+    border-radius: 12px;
+    position:static
+    top: 16rem%;
+}
+hr:hover{
+background-color: transparent;
+}
+.box{
+    position: absolute;
+    left: 26%;
+    width: 900px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+.box.box1{
+    background-color: whitesmoke;
+    transform-origin: right;
+    transform: perspective(500px) translateX(-50%) 
+          rotatey(-15deg);
+}
+.box.box2{
+    background-color: rgb(218, 218, 218);
+    transform-origin: left;
+    transform: perspective(500px) translateX(50%) 
+          rotatey(15deg);
+}
+.box.box2 h2{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    left: -100%;
+}
+.box.box1 h2{
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    right: -100%;
+}
+.box h2{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    white-space: nowrap;
+    left: 0%;
+    top: 0rem;
+    font-size: 7rem;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translate(2400px);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+.power input:first-child{
+    display: inline-block;
+    position: relative;
+    top: 17rem;
+    border: none;
+    font-size: 3rem;
+    left: 30rem;
+    height: 7rem;
+    width: 60rem;
+    outline: none;
+    border-radius: 4rem;
+    background-color: whitesmoke
+}
+.power input:first-child:hover{
+background-color: rgb(161, 160, 158);
+transition: 0s;
+}
+::placeholder{
+    position: relative;
+    left: 22rem;
+    font-size: 39px;
+    font-weight: bold;
+    color: rgb(66, 65, 65);
+}
+.power input:last-child{
+    display: inline-block;
+    position: relative;
+    top: 17rem;
+    font-size: 3rem;
+    width: 15rem;
+    height: 7rem;
+    left: 16rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    background-color:rgb(243, 146, 0);
+    color: black;
+}
+.power input:last-child:hover{
+background-color: green;
+transition: 0s;
+}
+.cube{
+    display: flex;
+    position: relative;
+    top: 27rem;
+    left: 0rem;
+    justify-content: space-around;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.cube a{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.cube button{
+    background-color: whitesmoke;
+    width: 19rem;
+    height: 5rem;
+    outline: none;
+    border-radius: 20rem;
+    border: none;
+}
+.cube button:hover{
+ background-color: rgb(243, 146, 0);
+ transition:0s
+}
